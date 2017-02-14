@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Upload_Logs
+  host: cfupload
+  disk_quota: 1024M
+  services:
+  - SGInstanceDemos
+  - WS_Upload_Logs
